@@ -1,0 +1,13 @@
+<h1>Life-Cycle-Hooks</h1>
+
+<h3> ngOnChanges</h3>  <br> 
+
+<input type="text"  [(ngModel)]="title">
+
+
+
+<button (click)="addClick()">Add the data</button>  <br><br>
+
+Disabled <input type="checkbox" [(ngModel)]="disabled" >  <br> <br>
+
+<app-life-hooks-dummy   *ngIf="!disabled"  [text]="titles"></app-life-hooks-dummy>

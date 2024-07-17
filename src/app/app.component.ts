@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Customer } from './models/customer';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'demo';
+  name!:string;
+  restart(){
+    this.name='';
+  }
+  customers:Customer[]=[]
+  getCustomers(customers:Customer[])
+  {
+    this.customers=customers
+  }
 }
+

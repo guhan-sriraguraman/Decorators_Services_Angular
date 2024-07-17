@@ -1,0 +1,18 @@
+<h1>List Component</h1>
+<div *ngIf="cars.length>0;then having;else notHaving"></div>
+    <ng-template #having>
+        <ul>
+            <li *ngFor="let carList of cars">{{carList}}</li>
+        </ul>
+    </ng-template>
+    <ng-template #notHaving>
+        <p>No data available</p>
+    </ng-template>
+
+<!-- 
+<h1>{{title}}</h1>
+<ul>
+    <li *ngFor="let movie of movie">{{movie.movieName}}</li>
+</ul> -->
+
+
